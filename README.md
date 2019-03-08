@@ -3,7 +3,7 @@ A High-performance C++ WebServer
 
 
 # 特性概述
-* 基于对象编程，在具体的类中注册回调函数(function+bind)，避免以继承方式承担虚函数指针以及虚函数表的开销，以及多重继承复杂性高，可拓展新不足的问题
+* 基于对象编程，在具体的类中注册回调函数(function+bind)，避免以继承方式承担虚函数指针以及虚函数表的开销，以及多重继承复杂性高，可拓展性不足的问题
 * 采用Reactor模型(one eventloop one thread)+ThreadPool处理计算任务，使用epoll LT来进行IO多路复用，采用单进程多线程的设计，充分发挥多核性能
 * 使用shared_ptr,weak_ptr,unique_ptr以及用RAIL手法管理资源
 * 为避免TcpConnection对象的频繁创建与销毁，在每个ioLoop启动阶段，预先生成多个TcpConnection对象以供使用
