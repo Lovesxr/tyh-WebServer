@@ -46,4 +46,4 @@ Log的实现分为前端和后端，前端往后端写，后端往磁盘写，�
 # 测试
 各个模块进行了测试，利用WebBench也对WebServer进行了并发的测试，使用ping-ping测试分别测试了服务器在单线程和多线程下的吞吐量
 
-测试结果见[测试及分析.md](https://github.com/StellaYuhao/tyh-WebServer/blob/master/测试及分析.md))
+测试结果见[测试及分析.md](https://github.com/StellaYuhao/tyh-WebServer/blob/master/测试及分析.md)
